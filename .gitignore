@@ -1,0 +1,6 @@
+.idea/
+graphs/Include/
+graphs/Lib/
+graphs/Scripts/
+graphs/share/
+graphs/pyvenv.cfg

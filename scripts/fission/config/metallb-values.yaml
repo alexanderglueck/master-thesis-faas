@@ -1,0 +1,17 @@
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: demo-pool
+  namespace: default
+spec:
+  addresses:
+  - 172.25.0.100-172.25.0.150
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: example
+  namespace: default
+spec:
+  ipAddressPools:
+  - demo-pool
